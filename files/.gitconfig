@@ -1,0 +1,8 @@
+[core]
+	preloadindex = true
+	fscache = true
+[gc]
+	auto = 256
+[user]
+	email = builds@dockpress.com
+	name = DockPress
