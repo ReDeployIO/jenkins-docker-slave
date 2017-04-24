@@ -29,6 +29,7 @@ RUN chown -R jenkins /home/jenkins && \
     chmod 700 /home/jenkins/.ssh && \
     touch /home/jenkins/.ssh/known_hosts && \ 
     ssh-keyscan -t rsa github.com >> /home/jenkins/.ssh/known_hosts && \
+    ssh-keyscan -t rsa bitbucket.org >> /home/jenkins/.ssh/known_hosts && \
     echo "jenkins    ALL=(ALL)    ALL" >> etc/sudoers
 
 # Set Name Servers
